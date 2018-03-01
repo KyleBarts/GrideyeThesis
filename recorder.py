@@ -35,4 +35,4 @@ with open(os.getcwd()+'/data/'+str(time.time()), "wb") as csv_file:
 		output.append(pixels)
 		print time.time()
 		print os.getcwd()
-		writer.writerow(pixels)
+		writer.writerow(output)
