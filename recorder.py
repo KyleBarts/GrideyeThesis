@@ -25,7 +25,7 @@ sensor = Adafruit_AMG88xx()
 #let the sensor initialize
 time.sleep(.1)
 
-with open(os.getcwd()+'/data/'+datetime.fromtimestamp(time.time()).strftime('%Y-%m-%dT%H:%M:%SZ')+".csv", "wb") as csv_file:
+with open(os.getcwd()+'/data/'+datetime.fromtimestamp(time.time()).strftime('%Y-%m-%dT %H-%M-%SZ')+".csv", "wb") as csv_file:
         writer = csv.writer(csv_file, delimiter=' ')
 	
 	while(1):
